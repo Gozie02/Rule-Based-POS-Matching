@@ -1,3 +1,8 @@
+import spacy
+nlp = spacy.load('en_core_web_sm')
+from spacy.matcher import Matcher
+import pandas as pd
+
 def extract_tech(text):
     doc = nlp(text)
     skills = []
